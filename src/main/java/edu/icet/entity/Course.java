@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "courses_table")
+@Table
 public class Course {
     @Id
     @GeneratedValue
