@@ -13,8 +13,14 @@ public class Author {
             strategy = GenerationType.SEQUENCE,
             generator = "author_id_incrementor"
     )
-    @Column
+
     private Long id;
     private String fName;
+    @Column(
+            name = "not_email",
+            unique = true,
+            nullable = false,
+            length = 35
+    )
     private String email;
 }
