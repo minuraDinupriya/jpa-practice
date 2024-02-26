@@ -13,6 +13,7 @@ public class Author {
             strategy = GenerationType.SEQUENCE,
             generator = "author_id_incrementor"
     )
+    @Column
     private Long id;
     private String fName;
     private String email;
